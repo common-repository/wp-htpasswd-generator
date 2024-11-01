@@ -1,0 +1,8 @@
+# enable basic authentication
+AuthType Basic
+# this text is displayed in the login dialog
+AuthName "Protected Resources"
+# The absolute path of the Apache htpasswd file
+AuthUserFile /Users/Shared/development/workspaces/Personali/Aptana/radicalbit/wp-content/plugins/htpasswd-generator/.htpasswd_generated
+#Allows any user in the .htpasswd_generated file to access the directory
+require valid-user
